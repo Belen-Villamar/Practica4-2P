@@ -14,27 +14,27 @@ Comienza creando un repositorio en GitHub, ya sea público o privado.
 Realiza un commit con el código deseado.
 ![Alt text](img/img2.png)
 
-### 4. Configuración de Secrets en GitHub
+### 3. Configuración de Secrets en GitHub
 
 Configura los secrets DOCKER_USER y DOCKER_PASSWORD en la sección correspondiente de Secrets en el repositorio de GitHub.
 ![Alt text](img/img3.png)
 ![Alt text](img/img4.png)
 ![Alt text](img/img5.png)
 
-### 5. Configuración del Token de Docker Hub
+### 4. Configuración del Token de Docker Hub
 
 Utiliza el nombre de usuario y la clave (token) de Docker Hub para llenar los secrets DOCKER_USER y DOCKER_PASSWORD. Crea un Token en Docker (con el nombre Github-Actions) y copia este Token generado en el secret DOCKER_PASSWORD.
 ![Alt text](img/img6.png)
 ![Alt text](img/img7.png)
 ![Alt text](img/img8.png)
 
-### 6. Dockerización de la Aplicación
+### 5. Dockerización de la Aplicación
 
 Realiza la Dockerización de la aplicación NestJS, preferiblemente un servicio REST o GraphQL sin dependencias.
 ![Alt text](img/img9.png)
 ![Alt text](img/img10.png)
 
-### 7. Verificación de la Construcción y Funcionamiento
+### 6. Verificación de la Construcción y Funcionamiento
 
 Asegúrate de que la imagen pueda ser compilada.
 ![Alt text](img/img11.png)
@@ -43,7 +43,7 @@ Asegúrate de que la imagen pueda ser compilada.
 Haz el commit para que se realicen los builds automáticos.
 ![Alt text](img/img13.png)
 
-### 8. Creación de la Acción de Imagen Docker
+### 7. Creación de la Acción de Imagen Docker
 
 Configura un flujo de trabajo en GitHub Actions para generar la imagen Docker utilizando el archivo `docker-image.yml`.
 ![Alt text](img/img14.png)
